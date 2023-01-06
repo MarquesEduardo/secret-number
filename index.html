@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="31.png">
+    <title>Secret Number</title>
+</head>
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-red-400 text-white">
+    <div class="h-[calc(100vh-64px)] lg:h-[calc(100vh-128px)] backdrop-blur-sm bg-white/30 border border-none rounded-3xl m-5 lg:m-16 flex flex-col justify-center items-center text-center">
+        <h1 class="m-5 text-6xl lg:text-9xl drop-shadow-xl">Guess the right number!</h1>
+        <h3 class="m-5 text-4xl lg:text-6xl drop-shadow-xl">The secret number is between <span id="menorValor">0</span> and <span id="maiorValor">100</span></h3>
+    
+        <div id="chute" class="text-3xl lg:text-5xl mt-10 flex flex-col items-center">
+        </div>
+    </div>
+    <script src="src/random.js"></script>
+    <script src="src/voice-recognition.js"></script>
+    <script src="src/validation.js"></script>
+</body>
+</html>
